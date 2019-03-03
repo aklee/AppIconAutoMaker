@@ -269,6 +269,8 @@ NSLog(@"-------\n"); \
         NSSize iconSize = NSSizeFromString(iconSizeString);
         
         NSString * iconName = [iconInfoDict objectForKey:@"Name"];
+      
+        NSString * idiom = [iconInfoDict objectForKey:@"idiom"];
         
         [self outputImage:image withSize:CGSizeMake(iconSize.width / scale, iconSize.height / scale) andName:iconName idiom:idiom];
         
@@ -313,7 +315,7 @@ NSLog(@"-------\n"); \
         sizeString = [sizeString substringToIndex:range.location];
     }
     
-    [dict setObject:sizeString forKey:@"size"];
+    [dict setObject:[NSString stringWithFormat:@"%@x%@",sizeString,sizeString] forKey:@"size"];
     [self.images addObject:dict];
 }
 

@@ -14,3 +14,4 @@
 @property (assign, nonatomic, getter=isRoundCorner) BOOL roundCorner;
 
 @end
+  
