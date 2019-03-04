@@ -42,7 +42,8 @@ NSLog(@"-------\n"); \
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    
+ 
+  
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"savePath"]) {
         self.pathFiled.stringValue = NSHomeDirectory();
     } else {
@@ -140,6 +141,8 @@ NSLog(@"-------\n"); \
 
 - (void)generateScaleImage:(NSImage *)image
 {
+  
+  
     BOOL zoomIn = self.zoomInCheckButton.state;
     NSSize originSize = zoomIn ? image.size : NSMakeSize(image.size.width / 3, image.size.height / 3);
     NSSize scale1x = originSize;
@@ -154,9 +157,9 @@ NSLog(@"-------\n"); \
         LLog(@"创建文件夹错误：%@", error.description);
     }
     
-    [self outputImage:image withSize:scale1x andName:@"Image" idiom:@"origin"];
-    [self outputImage:image withSize:scale2x andName:@"Image@2x" idiom:@"scale2x"];
-    [self outputImage:image withSize:scale3x andName:@"Image@3x" idiom:@"scale3x"];
+  [self outputImage:image withSize:scale1x andName:@"Image" idiom:@"origin" extentDic:@{}];
+  [self outputImage:image withSize:scale2x andName:@"Image@2x" idiom:@"scale2x" extentDic:@{}];
+    [self outputImage:image withSize:scale3x andName:@"Image@3x" idiom:@"scale3x" extentDic:@{}];
     
     [[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:[self encodingPathString]]];
 }
@@ -209,26 +212,38 @@ NSLog(@"-------\n"); \
     NSMutableDictionary *info = [NSMutableDictionary dictionaryWithObject:@"xcode" forKey:@"author"];
     [info setObject:@1 forKey:@"version"];
     [self.contents setObject:info forKey:@"info"];
-    
+  
+  
+//  NSString * path = [[NSBundle mainBundle] pathForResource:@"Contents.json" ofType:nil];
+//  NSData * data = [[NSFileManager defaultManager] contentsAtPath:path];
+//
+//  NSDictionary *dic =  [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//  NSString * path2 = [[NSBundle mainBundle] pathForResource:@"123.json" ofType:nil];
+//  bool result = [dic writeToFile:path2 atomically:true];
+//
+  
+  
+  
+  
     switch (self.platformSelection.indexOfSelectedItem) {
         case 0:
-            [self outputImage:image InfoDict:iPhoneSizeDict keysArr:iPhoneSizeKeys idiom:@"iphone"];
+      [self outputImage:image InfoDict:iPhoneSizeDict keysArr:iPhoneSizeKeys idiom:@"iphone" type:self.platformSelection.indexOfSelectedItem];
             break;
         case 1:
-            [self outputImage:image InfoDict:iPadSizeDict keysArr:iPadSizeKeys idiom:@"ipad"];
+            [self outputImage:image InfoDict:iPadSizeDict keysArr:iPadSizeKeys idiom:@"ipad" type:self.platformSelection.indexOfSelectedItem];
             break;
         case 2:
-            [self outputImage:image InfoDict:iPhoneSizeDict keysArr:iPhoneSizeKeys idiom:@"iphone"];
-            [self outputImage:image InfoDict:iPadSizeDict keysArr:iPadSizeKeys idiom:@"ipad"];
+            [self outputImage:image InfoDict:iPhoneSizeDict keysArr:iPhoneSizeKeys idiom:@"iphone" type:self.platformSelection.indexOfSelectedItem];
+            [self outputImage:image InfoDict:iPadSizeDict keysArr:iPadSizeKeys idiom:@"ipad" type:self.platformSelection.indexOfSelectedItem];
             break;
         case 3:
-            [self outputImage:image InfoDict:appleWatchDict keysArr:appleWatchSizeKeys idiom:@"watch"];
+            [self outputImage:image InfoDict:appleWatchDict keysArr:appleWatchSizeKeys idiom:@"watch" type:self.platformSelection.indexOfSelectedItem];
             break;
         case 4:
-            [self outputImage:image InfoDict:macOSXSizeDict keysArr:macOSXSizeKeys idiom:@"mac"];
+            [self outputImage:image InfoDict:macOSXSizeDict keysArr:macOSXSizeKeys idiom:@"mac" type:self.platformSelection.indexOfSelectedItem];
             break;
         case 5:
-            [self outputImage:image InfoDict:iOSLaunchImageDict keysArr:iOSLaunchSizeKeys idiom:@"iphone"];
+            [self outputImage:image InfoDict:iOSLaunchImageDict keysArr:iOSLaunchSizeKeys idiom:@"iphone" type:self.platformSelection.indexOfSelectedItem];
         default:
             break;
     }
@@ -254,7 +269,7 @@ NSLog(@"-------\n"); \
     
 }
 
-- (void)outputImage:(NSImage *)image InfoDict:(NSDictionary *)infoDict keysArr:(NSArray *)keysArr idiom:(NSString *)idiom
+- (void)outputImage:(NSImage *)image InfoDict:(NSDictionary *)infoDict keysArr:(NSArray *)keysArr idiom:(NSString *)idiom type:(NSInteger)type
 {
     NSView * view = [NSView new];
     
@@ -270,9 +285,16 @@ NSLog(@"-------\n"); \
         
         NSString * iconName = [iconInfoDict objectForKey:@"Name"];
       
-        NSString * idiom = [iconInfoDict objectForKey:@"idiom"];
-        
-        [self outputImage:image withSize:CGSizeMake(iconSize.width / scale, iconSize.height / scale) andName:iconName idiom:idiom];
+        NSString * theIdiom = [iconInfoDict objectForKey:@"idiom"];
+      
+        theIdiom = theIdiom.length == 0 ? idiom : theIdiom ;
+      
+      NSMutableDictionary *dic = @{}.mutableCopy;
+      if(type == 5){
+        [dic addEntriesFromDictionary:iconInfoDict];
+        [dic removeObjectsForKeys:@[@"Name",@"idiom",@"Dimensions"]];
+      }
+      [self outputImage:image withSize:CGSizeMake(iconSize.width / scale, iconSize.height / scale) andName:iconName idiom:theIdiom extentDic:dic];
         
     }
     
@@ -283,7 +305,7 @@ NSLog(@"-------\n"); \
 }
 
 
-- (void)outputImage:(NSImage *)image withSize:(NSSize)size andName:(NSString *)name idiom:(NSString *)idiom
+- (void)outputImage:(NSImage *)image withSize:(NSSize)size andName:(NSString *)name idiom:(NSString *)idiom extentDic:(NSDictionary*)extentDic
 {
     NSData * imageData = [[self drawImage:image withSize:size] TIFFRepresentation];
     
@@ -292,14 +314,16 @@ NSLog(@"-------\n"); \
     NSString * filePath = [[[self appiconsetPathString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", name]];
     
     [outputData writeToFile:filePath atomically:YES];
-    
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:[NSString stringWithFormat:@"%@.png", name] forKey:@"filename"];
-    [dict setObject:idiom forKey:@"idiom"];
+  
+  NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:extentDic];
+  
+   [dict setObject:[NSString stringWithFormat:@"%@.png", name] forKey:@"filename"];
+  
+   [dict setObject:idiom forKey:@"idiom"];
     
     NSRange range = [name rangeOfString:@"@"];
     LLog(@"range %lu", (unsigned long)range.location);
     if (range.location == NSNotFound) {
-        
          [dict setObject:@"1x" forKey:@"scale"];
     }else {
         

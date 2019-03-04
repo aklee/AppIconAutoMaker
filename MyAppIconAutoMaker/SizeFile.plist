@@ -1,282 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <array>
-    <dict>
-      <key>20 ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{20,20}</string>
-        <key>Name</key>
-        <string>icon-20</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      
-      <key>20 2ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{40,40}</string>
-        <key>Name</key>
-        <string>icon-20@2x</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      <key>20 2</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{40,40}</string>
-        <key>Name</key>
-        <string>icon-20@2x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      
-      <key>20 3</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{60,60}</string>
-        <key>Name</key>
-        <string>icon-20@3x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>29</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{29,29}</string>
-        <key>Name</key>
-        <string>icon-29</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>29 2</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{58,58}</string>
-        <key>Name</key>
-        <string>icon-29@2x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>29 3</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{87,87}</string>
-        <key>Name</key>
-        <string>icon-29@3x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>29 ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{29,29}</string>
-        <key>Name</key>
-        <string>icon-29</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      <key>29 2 ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{58,58}</string>
-        <key>Name</key>
-        <string>icon-29@2x</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      
-      <key>40 ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{40,40}</string>
-        <key>Name</key>
-        <string>icon-40</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      <key>40 2 ipad</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{80,80}</string>
-        <key>Name</key>
-        <string>icon-40@2x</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      
-      <key>40 2</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{80,80}</string>
-        <key>Name</key>
-        <string>icon-40@2x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>40 3</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{120,120}</string>
-        <key>Name</key>
-        <string>icon-40@3x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>60 2</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{120,120}</string>
-        <key>Name</key>
-        <string>icon-60@2x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      <key>60 3</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{180,180}</string>
-        <key>Name</key>
-        <string>icon-60@3x</string>
-        <key>idiom</key>
-        <string>iphone</string>
-      </dict>
-      
-      
-      
-      
-      <key>76</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{76,76}</string>
-        <key>Name</key>
-        <string>icon-76</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      <key>76 2</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{152,152}</string>
-        <key>Name</key>
-        <string>icon-76@2x</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      <key>83.5</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{167,167}</string>
-        <key>Name</key>
-        <string>icon-83.5@2x</string>
-        <key>idiom</key>
-        <string>ipad</string>
-      </dict>
-      
-      <key>1024</key>
-      <dict>
-        <key>Dimensions</key>
-        <string>{1024,1024}</string>
-        <key>Name</key>
-        <string>icon-1024</string>
-        <key>idiom</key>
-        <string>ios-marketing</string>
-      </dict>
-      
-  </dict>
+<array>
 	<dict>
-		<key>iPhone6/6s Setting</key>
+		<key>20 ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{20,20}</string>
+			<key>Name</key>
+			<string>icon-20</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>20 2ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{40,40}</string>
+			<key>Name</key>
+			<string>icon-20@2x</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>20 2</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{40,40}</string>
+			<key>Name</key>
+			<string>icon-20@2x</string>
+			<key>idiom</key>
+			<string>iphone</string>
+		</dict>
+		<key>20 3</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{60,60}</string>
+			<key>Name</key>
+			<string>icon-20@3x</string>
+			<key>idiom</key>
+			<string>iphone</string>
+		</dict>
+		<key>29</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{29,29}</string>
+			<key>Name</key>
+			<string>icon-29</string>
+			<key>idiom</key>
+			<string>iphone</string>
+		</dict>
+		<key>29 2</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{58,58}</string>
+			<key>Name</key>
+			<string>icon-29@2x</string>
+			<key>idiom</key>
+			<string>iphone</string>
+		</dict>
+		<key>29 3</key>
 		<dict>
 			<key>Dimensions</key>
 			<string>{87,87}</string>
 			<key>Name</key>
-			<string>icon-Small@3x</string>
+			<string>icon-29@3x</string>
+			<key>idiom</key>
+			<string>iphone</string>
 		</dict>
-		<key>iPhone6/6s Spotlight</key>
+		<key>29 ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{29,29}</string>
+			<key>Name</key>
+			<string>icon-29</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>29 2 ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{58,58}</string>
+			<key>Name</key>
+			<string>icon-29@2x</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>40 ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{40,40}</string>
+			<key>Name</key>
+			<string>icon-40</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>40 2 ipad</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{80,80}</string>
+			<key>Name</key>
+			<string>icon-40@2x</string>
+			<key>idiom</key>
+			<string>ipad</string>
+		</dict>
+		<key>40 2</key>
+		<dict>
+			<key>Dimensions</key>
+			<string>{80,80}</string>
+			<key>Name</key>
+			<string>icon-40@2x</string>
+			<key>idiom</key>
+			<string>iphone</string>
+		</dict>
+		<key>40 3</key>
 		<dict>
 			<key>Dimensions</key>
 			<string>{120,120}</string>
 			<key>Name</key>
-			<string>icon-Small-40@3x</string>
+			<string>icon-40@3x</string>
+			<key>idiom</key>
+			<string>iphone</string>
 		</dict>
-		<key>iPhone6/6s+</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{180,180}</string>
-			<key>Name</key>
-			<string>icon-60@3x</string>
-		</dict>
-		<key>iPhone Non-Retina (iOS 6.1 and Prior)</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{57,57}</string>
-			<key>Name</key>
-			<string>icon</string>
-		</dict>
-		<key>iPhone Retina (iOS6.1 and Prior)</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{114,114}</string>
-			<key>Name</key>
-			<string>icon@2x</string>
-		</dict>
-		<key>iPhone Retina</key>
+		<key>60 2</key>
 		<dict>
 			<key>Dimensions</key>
 			<string>{120,120}</string>
 			<key>Name</key>
 			<string>icon-60@2x</string>
+			<key>idiom</key>
+			<string>iphone</string>
 		</dict>
-		<key>iPhone Spotlight Non-Retina (iOS 6.1 and Prior)</key>
+		<key>60 3</key>
 		<dict>
 			<key>Dimensions</key>
-			<string>{29,29}</string>
+			<string>{180,180}</string>
 			<key>Name</key>
-			<string>icon-Small</string>
+			<string>icon-60@3x</string>
+			<key>idiom</key>
+			<string>iphone</string>
 		</dict>
-		<key>iPhone Spotlight Retina (iOS 6.1 and Prior)</key>
+		<key>76</key>
 		<dict>
 			<key>Dimensions</key>
-			<string>{58,58}</string>
+			<string>{76,76}</string>
 			<key>Name</key>
-			<string>icon-Small@2x</string>
+			<string>icon-76</string>
+			<key>idiom</key>
+			<string>ipad</string>
 		</dict>
-		<key>iPhone Spotlight Retina</key>
+		<key>76 2</key>
 		<dict>
 			<key>Dimensions</key>
-			<string>{80,80}</string>
+			<string>{152,152}</string>
 			<key>Name</key>
-			<string>icon-Small-40@2x</string>
+			<string>icon-76@2x</string>
+			<key>idiom</key>
+			<string>ipad</string>
 		</dict>
-		<key>iPhone Setting Non-Retina (iOS 6.1 and Prior)</key>
+		<key>83.5</key>
 		<dict>
 			<key>Dimensions</key>
-			<string>{29,29}</string>
+			<string>{167,167}</string>
 			<key>Name</key>
-			<string>icon-Small</string>
+			<string>icon-83.5@2x</string>
+			<key>idiom</key>
+			<string>ipad</string>
 		</dict>
-		<key>iPhone Setting Retina</key>
+		<key>1024</key>
 		<dict>
 			<key>Dimensions</key>
-			<string>{58,58}</string>
+			<string>{1024,1024}</string>
 			<key>Name</key>
-			<string>icon-Small@2x</string>
+			<string>icon-1024</string>
+			<key>idiom</key>
+			<string>ios-marketing</string>
 		</dict>
 	</dict>
 	<dict>
@@ -488,78 +384,200 @@
 			<string>icon_512x512@2x</string>
 		</dict>
 	</dict>
-	<dict>
-		<key>iPhone None-Retina Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{320,480}</string>
-			<key>Name</key>
-			<string>Default</string>
-		</dict>
-		<key>iPhone Retina Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{640,960}</string>
-			<key>Name</key>
-			<string>Default@2x</string>
-		</dict>
-		<key>iPad Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{768,1024}</string>
-			<key>Name</key>
-			<string>Default-Portrait~iPad</string>
-		</dict>
-		<key>iPad2/mini Retina Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{1536,2048}</string>
-			<key>Name</key>
-			<string>Default@2x-Portrait~iPad</string>
-		</dict>
-		<key>iPad/mini None-Retina Landscape</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{1024,768}</string>
-			<key>Name</key>
-			<string>Default-Landscape~iPad</string>
-		</dict>
-		<key>iPad2/mini Retina Landscape</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{2048,1536}</string>
-			<key>Name</key>
-			<string>Default@2x-Portrait~iPad</string>
-		</dict>
-		<key>iPhone5 Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{640,1136}</string>
-			<key>Name</key>
-			<string>Default-568@2x</string>
-		</dict>
-		<key>iPhone6/6s Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{750,1334}</string>
-			<key>Name</key>
-			<string>Default-750@2x</string>
-		</dict>
-		<key>iPhone6/6s plus Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{1242,2208}</string>
-			<key>Name</key>
-			<string>Default-736@3x</string>
-		</dict>
-		<key>iPhoneX Portrait</key>
-		<dict>
-			<key>Dimensions</key>
-			<string>{1125,2436}</string>
-			<key>Name</key>
-			<string>Default-812@3x</string>
-		</dict>
-	</dict>
+  <dict>
+    <key>2688h</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{1242,2688}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPhone Portrait iOS11+@3x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>12.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>2688h</string>
+    </dict>
+    <key>1792h</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{828,1792}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPhone Portrait iOS11+@2x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>12.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>1792h</string>
+    </dict>
+    <key>2436h</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{1125,2436}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPhone Portrait iOS11+2436h@3x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>11.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>2436h</string>
+    </dict>
+    <key>736h</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{1242 , 2208}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iOS 8-Retina HD 5.5@3x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>8.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>736h</string>
+    </dict>
+    <key>667h</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{750 , 1334}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iOS 8-Retina HD 4.7@2x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>8.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>667h</string>
+    </dict>
+    <key>ios 7 8 2x</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{640 ,960}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iOS 7,8@2x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+    </dict>
+    <key>retina4</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{640 , 1136}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iOS 7,8-Retina 4@2x</string>
+      <key>idiom</key>
+      <string>iphone</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+      <key>subtype</key>
+      <string>retina4</string>
+    </dict>
+    <key>ipad portrait</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{768 , 1024}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPad Portrait iOS 7-9</string>
+      <key>idiom</key>
+      <string>ipad</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+    </dict>
+    <key>ipad landscape</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{1024 , 768}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPad Landscape iOS 7-9</string>
+      <key>idiom</key>
+      <string>ipad</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>landscape</string>
+    </dict>
+    <key>ipad portrait 2x</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{1536 , 2048}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPad Portrait iOS 7-9@2x</string>
+      <key>idiom</key>
+      <string>ipad</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>portrait</string>
+    </dict>
+    <key>ipad landscape 2x</key>
+    <dict>
+      <key>Dimensions</key>
+      <string>{2048 , 1536}</string>
+      <key>extent</key>
+      <string>full-screen</string>
+      <key>Name</key>
+      <string>iPad Landscape iOS 7-9@2x</string>
+      <key>idiom</key>
+      <string>ipad</string>
+      <key>minimum-system-version</key>
+      <string>7.0</string>
+      <key>orientation</key>
+      <string>landscape</string>
+    </dict>
+<!--    <key>test</key>-->
+<!--    <dict>-->
+<!--      <key>Dimensions</key>-->
+<!--      <string>{1080 , 1920}</string>-->
+<!--      <key>extent</key>-->
+<!--      <string>full-screen</string>-->
+<!--      <key>Name</key>-->
+<!--      <string>test</string>-->
+<!--      <key>idiom</key>-->
+<!--      <string>ipad</string>-->
+<!--      <key>minimum-system-version</key>-->
+<!--      <string>7.0</string>-->
+<!--      <key>orientation</key>-->
+<!--      <string>landscape</string>-->
+<!--    </dict>-->
+  </dict>
 	<dict>
 		<key>@1x</key>
 		<string></string>
