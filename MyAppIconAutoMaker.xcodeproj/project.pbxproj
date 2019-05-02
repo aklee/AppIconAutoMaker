@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66E0D0E3222F791300B8883D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E0D0E2222F791300B8883D /* CoreGraphics.framework */; };
 		7CF328141E162E9C000B9EFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CF328161E162E9C000B9EFD /* Localizable.strings */; };
 		7CF3281A1E1630FD000B9EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CF3281C1E1630FD000B9EFD /* InfoPlist.strings */; };
 		8AEB319D1C17D5D800C1D6F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB319C1C17D5D800C1D6F6 /* AppDelegate.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66E0D0E2222F791300B8883D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7CF328151E162E9C000B9EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7CF328171E162E9D000B9EFD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7CF3281B1E1630FD000B9EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E0D0E3222F791300B8883D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66E0D0E1222F791200B8883D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66E0D0E2222F791300B8883D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AEB318F1C17D5D800C1D6F6 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +104,7 @@
 				8AEB31AE1C17D5D800C1D6F6 /* MyAppIconAutoMakerTests */,
 				8AEB31B91C17D5D800C1D6F6 /* MyAppIconAutoMakerUITests */,
 				8AEB31991C17D5D800C1D6F6 /* Products */,
+				66E0D0E1222F791200B8883D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
